@@ -43,7 +43,7 @@ public class Frase {
         if(recorrido(palabra,estado,estado2) == ' ')
             System.out.println("Todas se repiten");
         else
-            System.out.println("Palabra no repetida: "+recorrido(palabra,estado,estado2));
+            System.out.println("Letra no repetida: "+recorrido(palabra,estado,estado2));
         
     }
     /**
@@ -52,7 +52,7 @@ public class Frase {
      * @param estado estado de control
      * @param estado2 
      * @return retorna la letra 
-     * metodo que recibe la frase la recorre y devuelve la letra que se repite, o las que no se repiten.
+     * metodo que recibe la frase la recorre y devuelve la letra que se repite o las que no se repiten.
      */
     public char recorrido(char[] letra, boolean estado, boolean estado2){
         char norepetida = ' ';
