@@ -26,6 +26,7 @@ public class Frase {
         private boolean estado2 = false;
     /**
      * metodo que guarda la frase que digita el usuario
+     * e imprime el resultado
      */
     public void guardaFrase(){
         
