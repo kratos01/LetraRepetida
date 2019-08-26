@@ -8,8 +8,7 @@ package com.udec.letrarepetida;
 import java.util.Scanner;
 
 /**
- *
- * @author David Arias 
+ * @author David Arias  
  */
 public class Frase {
  /**
@@ -18,17 +17,17 @@ public class Frase {
     public Frase() {
     
     }
+        /**
+         * declaracion de los atributos privados
+         */
+        private String cadena;
+        private char [] palabra;
+        private boolean estado = false;
+        private boolean estado2 = false;
     /**
      * metodo que guarda la frase que digita el usuario
      */
     public void guardaFrase(){
-        /**
-         * variables para guardar la frase, guardar la frase separada por letras, y estados de control
-         */
-        String cadena;
-        char [] palabra;
-        boolean estado = false;
-        boolean estado2 = false;
         
         System.out.println("digite la frase a analizar: ");
         Scanner teclado = new Scanner(System.in);
@@ -50,7 +49,7 @@ public class Frase {
      * 
      * @param letra parametro que recibe la frase
      * @param estado estado de control
-     * @param estado2 
+     * @param estado2 estado de control para el bucle
      * @return retorna la letra 
      * metodo que recibe la frase la recorre y devuelve la letra que se repite o las que no se repiten.
      */
